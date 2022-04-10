@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package microservice;
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string name = 1;
+}
+
+service MicroService {
+  rpc getHello(HelloRequest) returns (HelloResponse) {}
+}
