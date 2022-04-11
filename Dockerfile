@@ -1,8 +1,10 @@
-FROM node:12.14.1-alpine
+FROM public.ecr.aws/h4m7c9h3/baseimages:node-16.13.2-alpine
 WORKDIR /app
 COPY package*.json ./
-COPY .env ./
-RUN npm install
+COPY tsconfig*.json ./
+COPY nest-cli.json ./
+# COPY .env ./
+RUN npm install 
 COPY . ./
 RUN npm run build
-CMD npm run start
+CMD npm run start:prod
