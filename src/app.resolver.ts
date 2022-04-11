@@ -9,6 +9,7 @@ export class AppResolver {
     @Client({
         transport: Transport.GRPC,
         options: {
+            url: `${process.env.MICRO_SERVER_URL}:${process.env.MICRO_MSC_PORT}`,
             package: 'microservice',
             protoPath: join(__dirname, '_proto/microservice.proto')
         }
