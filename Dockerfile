@@ -1,4 +1,4 @@
-FROM public.ecr.aws/h4m7c9h3/baseimages:node-16.13.2-alpine
+FROM node:16.14.2-alpine
 WORKDIR /app
 COPY package*.json ./
 COPY tsconfig*.json ./
