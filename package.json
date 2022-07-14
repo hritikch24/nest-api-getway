@@ -23,7 +23,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.6.2",
     "@grpc/proto-loader": "^0.6.9",
-    "@nestjs/apollo": "^10.0.8",
+    "@nestjs/apollo": "^10.0.16",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/graphql": "^10.0.8",
