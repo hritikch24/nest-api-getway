@@ -33,7 +33,7 @@
     "apollo-server-express": "^3.6.7",
     "dotenv": "^16.0.0",
     "graphql": "*",
-    "graphql-tools": "^8.2.5",
+    "graphql-tools": "^8.2.13",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
